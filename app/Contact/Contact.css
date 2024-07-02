@@ -1,0 +1,55 @@
+.contact-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #afd8fb;
+  margin-top: -10vh;
+  display: flex;
+  justify-content: center;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  color: #2b6786;
+  height: 40vh;
+  font-size: 40vh;
+  font-weight: 400;
+  font-family: "Bayon";
+  margin-top: 7vh;
+  gap: -40vh;
+}
+.address-text {
+  font-size: 5vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.address-text > p {
+  z-index: 50;
+  position: relative;
+  text-align: center;
+  margin-top: 35vh;
+}
+.address-text > h1 {
+  z-index: 50;
+  font-size: 10vh;
+  position: relative;
+  margin: 10vh;
+}
+#test {
+  margin: 10vh;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  background-color: #2b6786;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 480px) {
+  .contact-text {
+    font-size: 6vh;
+  }
+}

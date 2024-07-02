@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+
+.example-container {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Bayon";
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.example-left {
+  height: 100vh;
+  background-color: #f3f3e9;
+  width: 50vw;
+}
+.example-right {
+  height: 100vh;
+  width: 50vw;
+}
+.bullet {
+  font-size: 4.5vh;
+  font-weight: 500;
+  color: #e33529;
+
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  margin: 5%;
+}
+.bullet > span {
+  font-size: 10vh;
+}
+.text-visit {
+  font-size: 6vh;
+  font-weight: 600;
+  color: #e33529;
+
+  text-transform: uppercase;
+
+  padding: 10%;
+}
+.text-visit > h1 > span {
+  font-size: 20vh;
+  font-weight: 800;
+}
+.visit {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bayon";
+}
+.text-visit > h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.location {
+  width: 100vw;
+  height: 100vh;
+}
+.map {
+  width: 100vw;
+  height: 50vh;
+}

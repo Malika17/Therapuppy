@@ -1,0 +1,94 @@
+.tennis-ball {
+  font-family: "Bayon";
+  overflow: hidden;
+  height: 100vh; /* Height for the main tennis ball */
+  width: 100vh; /* Width for the main tennis ball */
+  border-radius: 50%;
+  background-color: #fbfbf5;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0; /* Ensure it's above other elements */
+  transition: 2s;
+}
+
+.tennis-ball:before,
+.tennis-ball:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: solid 1vw #fff; /* Border thickness */
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 888888;
+}
+
+.tennis-ball:before {
+  right: 70%;
+}
+
+.tennis-ball:after {
+  left: 70%;
+}
+
+.tennis-ball--middle {
+  height: 40vh; /* Height for the middle tennis ball */
+  width: 40vh; /* Width for the middle tennis ball */
+  margin-top: -15vh; /* Adjusted negative margin to overlap */
+  position: relative;
+  z-index: 2; /* Ensure it's above the main tennis ball */
+}
+
+.text-desc {
+  color: #e33529;
+  font-size: 2vh;
+  text-align: center; /* Center align text */
+  position: absolute;
+  top: 20%; /* Position text 20% from the top of the tennis ball */
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 2vh;
+  z-index: 999999999;
+}
+
+.wrapper-tennis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tennis-ball:hover {
+  transform: scale(120%);
+}
+
+.pink-circle {
+  height: 60%;
+  width: 60%;
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-inner-pink {
+  height: 40vh;
+  width: 40vh;
+  background-color: #c6606f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3vh;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}

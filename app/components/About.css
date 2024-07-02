@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3c3cb;
+  font-family: "Bayon";
+}
+.about-semi {
+  height: 200vh;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #f4ced3;
+  position: absolute;
+  top: -100%;
+}
+.text-therapuppy {
+  position: absolute;
+  color: #e33529;
+  font-size: 25vh;
+  top: 125vh;
+  left: 35vh;
+  font-weight: 800;
+  line-height: 25vh;
+}
+.text-therapuppy > h1 > span {
+  margin-left: 30vh;
+}
+.text-therapuppy > svg {
+  margin-left: 33vw;
+}
+.about_text {
+  font-size: 8vh;
+  background-color: #f3c3cb;
+  font-weight: 600;
+  color: #e33529;
+  font-family: "Bayon";
+  text-transform: uppercase;
+}
+.p_text {
+  position: relative;
+  top: 20vh;
+  width: 60vw;
+  margin: 0 auto;
+  margin-top: 10vh;
+  padding-top: 10vh;
+  line-height: 9vh;
+  text-align: center;
+}
+.purple {
+  height: 200vh;
+  width: 100vw;
+  border-radius: 80%;
+  background-color: #f4ced3;
+  margin-top: -82vh;
+}
+.img-circle {
+  height: 80vh;
+  width: 80vh;
+  background-color: red;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  top: 60%;
+  left: 30%;
+  transition-duration: 2s;
+}
+.img-circle > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 88889999;
+}
+.img-circle:hover {
+  scale: 1.25;
+}
+.about-wrapper {
+  background-color: #f3c3cb;
+  overflow: hidden;
+}

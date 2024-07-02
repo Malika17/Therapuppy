@@ -1,0 +1,136 @@
+$color1: #afd8fb;
+$color2: #f3f3e9;
+
+$animation-time: 4s;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  color: $color2;
+  overflow-x: hidden;
+}
+
+.cloud {
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  width: 105px;
+  height: 150px;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 10px;
+    transform: translateX(15%);
+    left: 0;
+    bottom: -80px;
+    border-radius: 100%;
+    background: darken($color2, 1.5);
+    animation: shadow $animation-time 0s infinite normal both;
+  }
+  .puffs {
+    animation: cloud $animation-time 0s infinite normal both;
+    top: 0vh;
+
+    background-color: black;
+    border-radius: 50% 50% 50% 50%;
+    border: 1px #646460;
+    left: 0;
+    background: $color2;
+    position: absolute;
+    width: 40vw;
+    height: 70vh;
+    box-shadow: 20vw -6vh, -20vw -6vh darken($color2, 4),
+      -40vw -10vh darken($color2, 4), 40vw -10vh, -10vw -20vh darken($color2, 4),
+      20vw -30vh darken($color2, 4), -20vw -30vh, 0vw -40vh;
+  }
+}
+
+@keyframes cloud {
+  50% {
+    transform: translateY(-12px);
+  }
+}
+@keyframes shadow {
+  50% {
+    width: 70%;
+    transform: translateX(22%);
+  }
+}
+:root {
+  --bg: #f7f7f7;
+  --color: #2b6786;
+  --font: Bayon;
+}
+
+.wrapper-bone {
+  margin-top: 20vh;
+  padding: 1.5rem 0;
+  filter: url("#goo");
+}
+
+.bone {
+  display: inline-block;
+  text-align: center;
+  background: var(--color);
+  color: var(--bg);
+  font-size: 10vh;
+  font-weight: 300;
+  padding: 1.6em 1em; /* Increase padding */
+  line-height: 1;
+  border-radius: 0.8em; /* Increase border-radius */
+  position: relative;
+  min-width: 16.46em; /* Double the min-width */
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 2.5rem; /* Increase font size */
+
+  &::before,
+  &::after,
+  span::before,
+  span::after {
+    width: 4.6em; /* Double the width */
+    height: 4.6em; /* Double the height */
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+  }
+
+  &::before {
+    top: 25%;
+    right: -10%; /* Adjust position to match new size */
+  }
+
+  &::after {
+    bottom: 25%;
+    right: -10%; /* Adjust position to match new size */
+  }
+
+  span::before {
+    top: 25%;
+    left: -10%; /* Adjust position to match new size */
+  }
+
+  span::after {
+    bottom: 25%;
+    left: -10%; /* Adjust position to match new size */
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:hover span::before,
+  &:hover span::after {
+    transform: none;
+  }
+}
