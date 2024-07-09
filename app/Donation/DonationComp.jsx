@@ -24,7 +24,7 @@ const Donation = () => {
         </div>
         <div className="donation-text">
           <p>
-            TheraPuppy is Jaipur's first-ever initiative where you can play and
+            TheraPuppy is Jaipur s first-ever initiative where you can play and
             destress with rescue puppies. Your support helps us provide the best
             care for these pups and promote their adoption.
           </p>
