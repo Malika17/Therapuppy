@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import circleimg from "./about_img.jpg";
+
 const About_text = () => {
   return (
     <div className="about_text">
