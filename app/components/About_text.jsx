@@ -12,7 +12,10 @@ const About_text = () => {
       </p>
       <div className="purple">
         <div className="img-circle">
-          <img src="https://img.freepik.com/free-vector/emotional-support-animal-concept-illustration_114360-19912.jpg?size=626&ext=jpg&uid=R101576697&ga=GA1.1.1906326977.1716119200&semt=ais_user"></img>
+          <img
+            src="https://img.freepik.com/free-vector/emotional-support-animal-concept-illustration_114360-19912.jpg?size=626&ext=jpg&uid=R101576697&ga=GA1.1.1906326977.1716119200&semt=ais_user"
+            alt="about-img"
+          ></img>
         </div>
       </div>
     </div>

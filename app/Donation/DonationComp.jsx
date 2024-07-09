@@ -14,7 +14,7 @@ const Donation = () => {
       </div>
       <div className="bottom-donation">
         <div className="donation-img">
-          <img src={donation_img.src}></img>
+          <img src={donation_img.src} alt="donation-img"></img>
           <Link href="/Donation_error">
             <div className="donation-btn">
               <h1>DONATE NOW!</h1>

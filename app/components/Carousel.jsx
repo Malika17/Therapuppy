@@ -31,7 +31,7 @@ function Carousel() {
       <div className="carouselInner">
         <img
           src={images[currImg].src}
-          alt={`Slide ${currImg + 1}`}
+          alt="slider-img"
           className="carouselImg"
         />
         <div className="left" onClick={prevSlide}>
