@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import "./Carousel.css";
 import caro_1 from "./caro-1.png";
 import caro_2 from "./caro-2.png";
@@ -29,10 +30,12 @@ function Carousel() {
   return (
     <div className="carousel">
       <div className="carouselInner">
-        <img
-          src={images[currImg].src}
-          alt="slider-img"
+        <Image
+          src={images[currImg]}
+          alt={`Slide ${currImg + 1}`}
           className="carouselImg"
+          layout="fill"
+          objectFit="cover"
         />
         <div className="left" onClick={prevSlide}>
           &#10094;

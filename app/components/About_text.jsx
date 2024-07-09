@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./About.css";
 
 const About_text = () => {
@@ -12,10 +13,12 @@ const About_text = () => {
       </p>
       <div className="purple">
         <div className="img-circle">
-          <img
+          <Image
             src="https://img.freepik.com/free-vector/emotional-support-animal-concept-illustration_114360-19912.jpg?size=626&ext=jpg&uid=R101576697&ga=GA1.1.1906326977.1716119200&semt=ais_user"
             alt="about-img"
-          ></img>
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       </div>
     </div>

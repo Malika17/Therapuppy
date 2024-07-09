@@ -1,6 +1,7 @@
 import React from "react";
 import donation_img from "./donation_dog.png";
 import Link from "next/link";
+import Image from "next/image";
 
 const Donation = () => {
   return (
@@ -14,7 +15,7 @@ const Donation = () => {
       </div>
       <div className="bottom-donation">
         <div className="donation-img">
-          <img src={donation_img.src} alt="donation-img"></img>
+          <Image src={donation_img} alt="Rescue puppy" />
           <Link href="/Donation_error">
             <div className="donation-btn">
               <h1>DONATE NOW!</h1>
@@ -27,7 +28,7 @@ const Donation = () => {
             destress with rescue puppies. Your support helps us provide the best
             care for these pups and promote their adoption.
           </p>
-          <div class="impact">
+          <div className="impact">
             <h2>Your Impact</h2>
             <p>
               Rescue and rehabilitation of puppies
